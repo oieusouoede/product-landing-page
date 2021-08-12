@@ -7,52 +7,79 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://img.icons8.com/windows/96/000000/sci-fi.png">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/style.css">
-    <title>Ofertas Limitadas</title>
+    <title>OVNIs Usados</title>
 </head>
 <body>
-    <header id="header">
-        <nav id="nav-bar">
-            <div>
-                <a id="nav-logo" href="/">
-                    <img id="header-img" src="https://img.icons8.com/windows/50/000000/sci-fi.png" alt="Ovnis na Web"/> 
-                    <p id="title">Ovnis<br>na Web</p>
-                </a> 
+    <main>
+        <header id="header">
+            <nav id="nav-bar">
+                <div class="logo-container">
+                    <a id="nav-logo" href="/">
+                        <img id="header-img" src="https://img.icons8.com/windows/50/000000/sci-fi.png" alt="Ovnis na Web"/> 
+                        <p id="title">Ovnis<br>na Web</p>
+                    </a> 
+                </div>
+                <div id="nav-links">
+                    <a class="nav-link" href="#features-container">Garantias</a><a class="nav-link" href="#video-container">Produtos</a><a class="nav-link" href="#form-container">Contato</a>
+                </div>	
+            </nav>
+        </header>
+        <section id="features-container">
+            <div id="feature">
+                <div class="feature-img">
+                    <img src="https://img.icons8.com/fluency/50/000000/warranty.png"/>
+                </div>
+                <div class="feature-txt">
+                    <h1 class="feature-title">Produtos verificados</h1>
+                    <p class="feature-paragraph">Todos os produtos anunciados no nosso site têm sua qualidade verificada pelo nosso time</pclass="feature-paragraph">
+                </div>  
             </div>
-            <div id="nav-links">
-                <a href="#">Início</a><a href="#">Ofertas</a><a href="#">Contato</a>
-            </div>	
-        </nav>
-    </header>
-    <section id="features-container">
-        <div id="feature">
-            <div class="feature-img">
-                <img src="https://img.icons8.com/fluency/50/000000/warranty.png"/>
+            <div id="feature">
+                <div class="feature-img">
+                    <img src="https://img.icons8.com/color/50/000000/voyager-badge.png"/>
+                </div>
+                <div class="feature-txt">
+                    <h1 class="feature-title">Entrega garantida</h1>
+                    <p class="feature-paragraph">Garantimos pronta entrega em qualquer localidade no universo observável</p>
+                </div> 
             </div>
-            <div class="feature-txt">
-                <h1 class="feature-title">Produtos verificados</h1>
-                <p class="feature-paragraph">Todos os produtos anunciados no nosso site têm sua qualidade verificada pelo nosso time</pclass="feature-paragraph">
-            </div>  
-        </div>
-        <div id="feature">
-            <div class="feature-img">
-                <img src="https://img.icons8.com/color/50/000000/voyager-badge.png"/>
+            <div id="feature">
+                <div class="feature-img">
+                    <img src="https://img.icons8.com/color/50/000000/price-tag--v1.png"/>
+                </div>
+                <div class="feature-txt">
+                    <h1 class="feature-title">Melhores preços</h1>
+                    <p class="feature-paragraph">Nosso site é único e nele você encontrará os melhores preços em OVNIs e espaçonaves usadas</p>
+                </div>   
             </div>
-            <div class="feature-txt">
-                <h1 class="feature-title">Entrega garantida</h1>
-                <p class="feature-paragraph">Garantimos pronta entrega em qualquer localidade no universo observável</p>
-            </div> 
-        </div>
-        <div id="feature">
-            <div class="feature-img">
-                <img src="https://img.icons8.com/color/50/000000/price-tag--v1.png"/>
+        </section>
+        <section id="video-container">
+            <iframe id="video" height="400" 
+            src="https://www.youtube.com/embed/0XbQdMV7i0w" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+        </section>
+        <section id="form-container">
+            <div class="form-field">
+                <p id="form-title">Cadastre-se para receber nossas ofertas no seu email</p>
             </div>
-            <div class="feature-txt">
-                <h1 class="feature-title">Melhores preços</h1>
-                <p class="feature-paragraph">Nosso site é único e nele você encontrará os melhores preços em OVNIs e espaçonaves usadas</p>
-            </div>   
-        </div>
-    </section>
-
-   
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <div class="form-field">
+                    <input type="text" class="input-field" id="name" name="name" placeholder="Nome" required/>
+                    <input type="email" class="input-field" id="email" name="email" placeholder="Email" required/>
+                </div>
+                <div class="form-field">
+                    <input type="submit" class="form-field" value="Enviar" id="submit">
+                </div>   
+            </form>
+        </section>
+        <footer>
+    
+        </footer>
+    </main> 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
