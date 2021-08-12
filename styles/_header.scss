@@ -9,26 +9,34 @@
     height: 3rem;
     display: flex;
     justify-content: space-between;
-    background-color: $dirtyWhite;
+    align-items: center;
+    background-color: $gray;
 }
+
 #nav-logo{
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     line-height: 1.2rem;
     font-weight: bolder;
+    height: inherit;
+}
+
+.logo-container{
+    padding: 0.2rem;
     height: 100%;
 }
 
 #title:hover{
-    color: $red;
+    color: hsl(146, 83%, 36%);
 }
 
 #header-img{
-    height: 100%;
     object-fit: contain;
-    margin: 0.5rem
-
+    height: 80%;
+    border-radius: 50%;
+    background-color: hsl(146, 83%, 36%);
+    margin: 0 1rem;
 }
 
 #nav-links{
@@ -39,4 +47,28 @@
     height: 100%;
     width: 30%;
     justify-content: space-around;
+    a{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            display: block;
+            height: 3px;
+            left: 0;
+            right: 0;
+            bottom: -14px;
+            background: hsl(146, 83%, 36%);
+            opacity: 0;
+            transition: opacity 150ms ease-in-out;
+        }
+        
+        &:hover{
+            color: hsl(146, 83%, 36%);
+            text-shadow: $sombra;
+            &::before{
+                opacity: 1;
+            }
+        }
+    }
+    
 }

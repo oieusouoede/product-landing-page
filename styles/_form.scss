@@ -1,0 +1,54 @@
+#form-container{
+    background-color: hsla(120, 26%, 5%, 0.8);
+    color: hsla(0, 0%, 100%, 0.9);
+    border-radius: 0.2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+#form-title{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 700;
+}
+#submit{
+    background-color: hsla(147, 100%, 20%, 0.4);
+    color: hsla(0, 0%, 100%, 0.9);
+    font-size: 1.2rem;
+    padding: 1.0rem;
+    border: 0;
+    border-radius: 0;
+    width: 40%;
+    text-align: center;
+}
+
+#submit:hover{
+    border-color: hsl(0, 0%, 100%);
+    outline: 0;
+    cursor: pointer;
+    background-color: rgba(16, 168, 82, 0.596);
+    box-shadow: 0 0 0 0.2rem hsla(147, 52%, 56%, 0.541);
+}
+.form-field{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.input-field{
+    border: 0;
+    width: 40%;
+    text-indent: 1rem;
+    height: 3rem;
+    background-color: hsl(0, 0%, 94%);
+    font-size: 1.2rem;
+}

@@ -1,7 +1,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
-    scroll-padding-top: 30px;
+    scroll-padding-top: 60px;
 }
 
 *, *::before, *::after{
@@ -13,15 +13,41 @@ html {
 body{
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    margin: 4rem 0;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 10px;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(../assets/ufo-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main{
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+section{
+    margin: 2rem 0;
 }
 
 a, a:visited, a:hover {
     text-decoration: none;
-    color: $gray;
+    color: hsl(0, 0%, 94%);
     font-weight: 500;
 }
